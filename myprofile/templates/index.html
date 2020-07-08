@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}{% endblock %}
+{% block content %}
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+<h2>Events</h2>
+<br><br>
+<a href="{% url 'event-add' %}">Add Event</a>
+<table style="width:100%">
+	<tr>
+		<th>Delete</th>
+		<th>Edit</th>
+		<th>Description</th>
+		<th>Summary</th>
+		<th>Attendees</th>
+		<th>Link</th>
+		<th>Hangout Link</th>
+	</tr>
+	
+	{% for event in events %}
+	<tr>
+		<td>
+			<a href="{% url 'event-delete' event.id %}">delete</a>
+		</td>
+		<td>
+			<a href="{% url 'event-update' event.id %}"> edit </a>
+		</td>
+		<td>
+			{{event.description}}
+		</td>
+		<td>
+			{{event.summary}}
+		</td>
+		<td>
+		{% for attendee in event.attendees %}
+			{{attendee.email}}
+			<br>
+		{% endfor %}
+		</td>
+		{% for link in event.links %}
+		<td>
+			<a href="{{link.htmlLink}}"> link </a>
+		</td>
+		<td>
+			<a href="{{link.hangoutLink}}" > Google Meet </a>
+		</td>
+		{% endfor %}
+	</tr>
+	{% endfor %}
+</table>
+{% endblock %}

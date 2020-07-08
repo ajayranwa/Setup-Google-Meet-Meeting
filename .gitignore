@@ -1,0 +1,15 @@
+myprofile/calender_api/credentials.json
+
+myprofile/calender_api/token.pickle
+
+# virtualenv
+venv/
+
+# Spyder project settings
+.spyderproject
+
+# Rope project settings
+.ropeproject
+
+*.sqlite3
+*.db
