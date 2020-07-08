@@ -8,9 +8,9 @@ Prerequisites
 
 To run this quickstart, you'll need:
 
-Python 2.6 or greater
-The pip package management tool
-A Google account with Google Calendar enabled
+1. Python 2.6 or greater
+2. The pip package management tool
+4. A Google account with Google Calendar enabled
 
 Step 1: Turn on the Google Calendar API
 ---------------------------------------
@@ -23,4 +23,3 @@ Quick start
 2. pip install -r requirements.txt
 4. python manage.py migrate
 5. python manage.py runserver 
-
