@@ -15,6 +15,7 @@ To run this quickstart, you'll need:
 Step 1: Turn on the Google Calendar API
 ---------------------------------------
 Visit the link(https://developers.google.com/calendar/quickstart/python) and **Enable the Google Calendar API** 
+
 In resulting dialog click **DOWNLOAD CLIENT CONFIGURATION** and save the file credentials.json to *myprofile/calender_api/*.
 
 Quick start
