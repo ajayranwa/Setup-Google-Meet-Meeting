@@ -33,7 +33,7 @@ class EventCreate(generic.CreateView):
 class EventAttendeeCreate(generic.CreateView):
     model = Event
     fields = ['description', 'summary','start','end']
-    success_url = 'index'
+    success_url = '/'
 
     def get_context_data(self, **kwargs):
         data = super(EventAttendeeCreate, self).get_context_data(**kwargs)
@@ -63,14 +63,14 @@ class EventAttendeeCreate(generic.CreateView):
 
 class EventUpdate(generic.UpdateView):
     model = Event
-    success_url = 'index'
+    success_url = '/'
     fields = ['description', 'summary','start','end']
 
 
 class EventAttendeeUpdate(generic.UpdateView):
     model = Event
     fields = ['description', 'summary','start','end']
-    success_url = 'index'
+    success_url = '/'
 
     def get_context_data(self, **kwargs):
         data = super(EventAttendeeUpdate, self).get_context_data(**kwargs)
