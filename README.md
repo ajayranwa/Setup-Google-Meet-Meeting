@@ -1,26 +1,12 @@
-#Create Google Meet Meeting with Django inline formset
-==================
+# Structured documents
 
-This is a simple django app that demonstrates how to create a Google Meet meeting with attendees.
+Sometimes it's useful to have different levels of headings to structure your documents. Start lines with a `#` to create headings. Multiple `##` in a row denote smaller heading sizes.
 
-###Prerequisites
--------------
+### This is a third-tier heading
 
-To run this quickstart, you'll need:
+You can use one `#` all the way up to `######` six for different heading sizes.
 
-1. Python 2.6 or greater
-2. The pip package management tool
-4. A Google account with Google Calendar enabled
+If you'd like to quote someone, use the > character before the line:
 
-###Step 1: Turn on the Google Calendar API
----------------------------------------
-Visit the link(https://developers.google.com/calendar/quickstart/python) and **Enable the Google Calendar API** 
-
-In resulting dialog click **DOWNLOAD CLIENT CONFIGURATION** and save the file credentials.json to *myprofile/calender_api/*.
-
-###Quick start
------------
-1. (optional) create virtual env
-2. pip install -r requirements.txt
-4. python manage.py migrate
-5. python manage.py runserver 
+> Coffee. The finest organic suspension ever devised... I beat the Borg with it.
+> - Captain Janeway
