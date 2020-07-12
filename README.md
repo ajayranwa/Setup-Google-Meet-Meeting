@@ -20,3 +20,12 @@ In resulting dialog click **DOWNLOAD CLIENT CONFIGURATION** and save the file cr
 2. pip install -r requirements.txt
 4. python manage.py migrate
 5. python manage.py runserver 
+
+### Some Screenshots
+#### List of all events
+
+![All events](/static/screenshot/1.png)
+
+#### Add/Update event
+
+![All events](/static/screenshot/2.png)
